@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nhân Viên", "Nhân Viên\Nhân Viên.csproj", "{B2E9E773-5DAD-4DF2-B554-22DB50E37CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KH", "..\KH\KH\KH.csproj", "{FEC340EF-940D-4104-9895-03C762182F5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2E9E773-5DAD-4DF2-B554-22DB50E37CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E9E773-5DAD-4DF2-B554-22DB50E37CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E9E773-5DAD-4DF2-B554-22DB50E37CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E9E773-5DAD-4DF2-B554-22DB50E37CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC340EF-940D-4104-9895-03C762182F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC340EF-940D-4104-9895-03C762182F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC340EF-940D-4104-9895-03C762182F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC340EF-940D-4104-9895-03C762182F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

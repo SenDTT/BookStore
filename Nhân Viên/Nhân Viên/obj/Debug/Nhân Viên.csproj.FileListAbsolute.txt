@@ -1,0 +1,9 @@
+D:\BOOK\Nhân Viên\Nhân Viên\bin\Debug\Nhân Viên.exe.config
+D:\BOOK\Nhân Viên\Nhân Viên\bin\Debug\Nhân Viên.exe
+D:\BOOK\Nhân Viên\Nhân Viên\bin\Debug\Nhân Viên.pdb
+D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân_Viên.Form1.resources
+D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân_Viên.Properties.Resources.resources
+D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.csproj.GenerateResource.Cache
+D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.exe
+D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.pdb
+D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.csprojResolveAssemblyReference.cache
