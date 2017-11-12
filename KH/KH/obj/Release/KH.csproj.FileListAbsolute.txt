@@ -7,3 +7,12 @@ D:\BOOK\KH\KH\obj\Release\KH.csproj.GenerateResource.Cache
 D:\BOOK\KH\KH\obj\Release\KH.exe
 D:\BOOK\KH\KH\obj\Release\KH.pdb
 D:\BOOK\KH\KH\obj\Release\KH.csprojResolveAssemblyReference.cache
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\bin\Release\KH.exe.config
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\obj\Release\KH.exe
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\obj\Release\KH.pdb
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\bin\Release\KH.exe
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\bin\Release\KH.pdb
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\obj\Release\KH.csprojResolveAssemblyReference.cache
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\obj\Release\KH.Form1.resources
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\obj\Release\KH.Properties.Resources.resources
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\KH\KH\obj\Release\KH.csproj.GenerateResource.Cache

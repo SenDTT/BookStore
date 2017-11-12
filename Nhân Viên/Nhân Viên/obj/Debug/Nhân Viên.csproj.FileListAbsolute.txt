@@ -7,3 +7,6 @@ D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.csproj.GenerateResource.Ca
 D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.exe
 D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.pdb
 D:\BOOK\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.csprojResolveAssemblyReference.cache
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\Nhân Viên\Nhân Viên\bin\Debug\Nhân Viên.exe.config
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.exe
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\Nhân Viên\Nhân Viên\obj\Debug\Nhân Viên.pdb
