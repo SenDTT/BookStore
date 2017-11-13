@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.QLBanSach = new frmQuanLiBanSach.QLBanSach();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -53,9 +53,9 @@
             // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "TheoNgay";
-            reportDataSource1.Value = this.DataTable1BindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "TheoNgay";
+            reportDataSource2.Value = this.DataTable1BindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "frmQuanLiBanSach.rptTheoNgay.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 40);
             this.reportViewer1.Name = "reportViewer1";
@@ -88,18 +88,21 @@
             // 
             // btIn
             // 
+            this.btIn.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btIn.ForeColor = System.Drawing.Color.DarkCyan;
             this.btIn.Location = new System.Drawing.Point(296, 14);
             this.btIn.Name = "btIn";
             this.btIn.Size = new System.Drawing.Size(75, 23);
             this.btIn.TabIndex = 3;
             this.btIn.Text = "In báo cáo";
-            this.btIn.UseVisualStyleBackColor = true;
+            this.btIn.UseVisualStyleBackColor = false;
             this.btIn.Click += new System.EventHandler(this.btIn_Click);
             // 
             // rptTheoNgay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(656, 419);
             this.Controls.Add(this.btIn);
             this.Controls.Add(this.lbTheoNgay);

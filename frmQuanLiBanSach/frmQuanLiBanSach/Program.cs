@@ -16,7 +16,7 @@ namespace frmQuanLiBanSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChiTietHoaDon());
+            Application.Run(new HoaDonBan());
         }
     }
 }

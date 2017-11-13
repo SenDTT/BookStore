@@ -63,7 +63,6 @@
             this.btThemHD = new System.Windows.Forms.Button();
             this.btLuuHD = new System.Windows.Forms.Button();
             this.btXoaHD = new System.Windows.Forms.Button();
-            this.btIn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatHang)).BeginInit();
@@ -252,7 +251,6 @@
             resources.ApplyResources(this.cbMaSach, "cbMaSach");
             this.cbMaSach.FormattingEnabled = true;
             this.cbMaSach.Name = "cbMaSach";
-            this.cbMaSach.SelectedIndexChanged += new System.EventHandler(this.cbMaSach_SelectedIndexChanged);
             // 
             // lbSoLuong
             // 
@@ -276,6 +274,7 @@
             resources.ApplyResources(this.btThemHD, "btThemHD");
             this.btThemHD.Name = "btThemHD";
             this.btThemHD.UseVisualStyleBackColor = false;
+            this.btThemHD.Click += new System.EventHandler(this.btThemHD_Click);
             // 
             // btLuuHD
             // 
@@ -284,7 +283,7 @@
             resources.ApplyResources(this.btLuuHD, "btLuuHD");
             this.btLuuHD.Name = "btLuuHD";
             this.btLuuHD.UseVisualStyleBackColor = false;
-            this.btLuuHD.Click += new System.EventHandler(this.btLuuHD_Click);
+            this.btLuuHD.Click += new System.EventHandler(this.btLuuHD_Click_1);
             // 
             // btXoaHD
             // 
@@ -293,21 +292,13 @@
             resources.ApplyResources(this.btXoaHD, "btXoaHD");
             this.btXoaHD.Name = "btXoaHD";
             this.btXoaHD.UseVisualStyleBackColor = false;
-            // 
-            // btIn
-            // 
-            this.btIn.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.btIn.ForeColor = System.Drawing.Color.DarkCyan;
-            resources.ApplyResources(this.btIn, "btIn");
-            this.btIn.Name = "btIn";
-            this.btIn.UseVisualStyleBackColor = false;
+            this.btXoaHD.Click += new System.EventHandler(this.btXoaHD_Click_1);
             // 
             // ChiTietHoaDon
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.Controls.Add(this.btIn);
             this.Controls.Add(this.btXoaHD);
             this.Controls.Add(this.btLuuHD);
             this.Controls.Add(this.btThemHD);
@@ -355,7 +346,6 @@
         private System.Windows.Forms.Button btThemHD;
         private System.Windows.Forms.Button btLuuHD;
         private System.Windows.Forms.Button btXoaHD;
-        private System.Windows.Forms.Button btIn;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;

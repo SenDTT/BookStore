@@ -47,6 +47,6 @@ E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\frmQuanLiBanSach\frmQuan
 E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\frmQuanLiBanSach\frmQuanLiBanSach\obj\Debug\RdlCompile.compiled
 E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\frmQuanLiBanSach\frmQuanLiBanSach\obj\Debug\frmQuanLiBanSach.exe
 E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\frmQuanLiBanSach\frmQuanLiBanSach\obj\Debug\frmQuanLiBanSach.pdb
-E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\frmQuanLiBanSach\frmQuanLiBanSach\obj\Debug\frmQuanLiBanSach.csprojResolveAssemblyReference.cache
 E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\frmQuanLiBanSach\frmQuanLiBanSach\obj\Debug\frmQuanLiBanSach.HoaDonBan.resources
 E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\frmQuanLiBanSach\frmQuanLiBanSach\obj\Debug\frmQuanLiBanSach.ChiTietHoaDon.resources
+E:\Học tập\Kiểm thử phần mềm\DEMO\BookStore\frmQuanLiBanSach\frmQuanLiBanSach\obj\Debug\frmQuanLiBanSach.csprojResolveAssemblyReference.cache

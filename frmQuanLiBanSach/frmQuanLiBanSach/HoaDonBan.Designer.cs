@@ -83,32 +83,38 @@
             // 
             // btThem
             // 
+            this.btThem.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btThem.ForeColor = System.Drawing.Color.DarkCyan;
             this.btThem.Location = new System.Drawing.Point(63, 321);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(75, 23);
             this.btThem.TabIndex = 1;
             this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btXoa
             // 
+            this.btXoa.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btXoa.ForeColor = System.Drawing.Color.DarkCyan;
             this.btXoa.Location = new System.Drawing.Point(144, 321);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(75, 23);
             this.btXoa.TabIndex = 1;
             this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.UseVisualStyleBackColor = false;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btTim
             // 
+            this.btTim.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btTim.ForeColor = System.Drawing.Color.DarkCyan;
             this.btTim.Location = new System.Drawing.Point(433, 321);
             this.btTim.Name = "btTim";
             this.btTim.Size = new System.Drawing.Size(75, 23);
             this.btTim.TabIndex = 1;
             this.btTim.Text = "Tìm";
-            this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.UseVisualStyleBackColor = false;
             this.btTim.Click += new System.EventHandler(this.btTim_Click);
             // 
             // txtTuKhoa
@@ -123,6 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(573, 356);
             this.Controls.Add(this.txtTuKhoa);
             this.Controls.Add(this.btTim);

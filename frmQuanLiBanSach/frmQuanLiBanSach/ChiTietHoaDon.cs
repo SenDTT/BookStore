@@ -15,10 +15,7 @@ namespace frmQuanLiBanSach
     public partial class ChiTietHoaDon : Form
     {
         SqlConnection cn = null;
-        private DataTable dt;
-        private DataSet ds;
-        private SqlDataAdapter da;
-        double tongTien = 0;
+        double tongTien;
         public ChiTietHoaDon()
         {
             InitializeComponent();
@@ -29,13 +26,9 @@ namespace frmQuanLiBanSach
             string cnStr = ConfigurationManager.ConnectionStrings["BOOKSTOREconnectionStrings"].ConnectionString;
             cn = new SqlConnection(cnStr); 
             loadItemFromDB();
-            //LoadDataGirdView();
-            //txtTongTien.Text = TongTien().ToString();
-            //txtTenSach.DataBindings.Add("Text", dt, "TenSach");
-            //txtDonBan.DataBindings.Add("Text", dt, "DonGiaBan");
-            //txtThue.DataBindings.Add("Text", dt, "ThueVAT");
-            //txtThanhTien.DataBindings.Add("Text", dt, "ThanhTien");
-
+            btLuuHD.Enabled = false;
+            btXoaHD.Enabled = false;
+            btThemHD.Enabled = true;
         }
 
         public void Connect()
@@ -71,32 +64,12 @@ namespace frmQuanLiBanSach
             }
         }
 
-        private void LoadDataGirdView()
-        {
-            string sql = "SELECT s.MaSach, s.TenSach, cthdb.SoLuong, cthdb.DonGiaBan, hdb.ThueVAT, ThanhTien=cthdb.SoLuong*cthdb.DonGiaBan FROM Sach s, Chi_Tiet_HDB cthdb, Hoa_Don_Ban hdb WHERE cthdb.MaSach = s.MaSach AND hdb.MaHDB = cthdb.MaHDB";
-            ds = GetDataSet(sql);
-            dt = ds.Tables[0];
-            cbMaSach.DataSource = dt;
-            dgvMatHang.DataSource = dt;
-        }
-
-        private DataSet GetDataSet(string sql)
-        {
-            da = new SqlDataAdapter(sql, cn);
-            ds = new DataSet();
-            int numberOfRows = da.Fill(ds);
-
-            if (numberOfRows <= 0)
-                ds = null;
-            return ds;
-        }
-
         private void loadItemFromDB()
         {
             DataTable dt = new DataTable();
             dt.Clear();
             string sql = "SELECT MaSach, TenSach FROM Sach";
-            SqlDataAdapter da = new SqlDataAdapter(sql,cn);
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn);
             da.Fill(dt);
             cbMaSach.DataSource = dt;
             cbMaSach.DisplayMember = "MaSach";
@@ -106,100 +79,142 @@ namespace frmQuanLiBanSach
             {
                 cbMaSach.SelectedIndex = 0;
             }
+            cbMaSach.SelectedIndexChanged += new EventHandler(cbMaSach_SelectedIndexChanged);
         }
 
         private void cbMaSach_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtTenSach.Text = cbMaSach.SelectedValue.ToString();
-        }
-
-        private void btLuuHD_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Connect();
-                //SqlDataAdapter da = new SqlDataAdapter();
-                //string ins = "INSERT INTO Hoa_Don_Ban(MaHDB,NgayBan,MaKH,MaNV,ThueVAT) VALUES ('" + txtMaHD.Text + "','" + dtpNgayBan.Text + "','" + txtMaKH.Text + "','" + txtMaNV.Text + "','" + txtThue.Text + "')";
-                //string ins1 = "INSERT INTO Chi_Tiet_HDB(MaHDB,MaSach,DonGiaBan,SoLuong) VALUES ('" + txtMaHD.Text + "','" + cbMaSach.SelectedValue.ToString() + "','" + txtDonBan + "','" + txtSoLuong.Text + "')";
-                //SqlCommand cmd = new SqlCommand(ins1, cn);
-                //cmd.Parameters.Add(new SqlParameter("@maHDB", SqlDbType.BigInt, 10, "MaHDB"));
-                //cmd.Parameters.Add(new SqlParameter("@maKH", SqlDbType.Int, 10, "MaKH"));
-                //cmd.Parameters.Add(new SqlParameter("@maNV", SqlDbType.NChar, 5, "MaNV"));
-                //cmd.Parameters.Add(new SqlParameter("@ngayban", SqlDbType.Date, 10, "NgayBan"));
-                //cmd.Parameters.Add(new SqlParameter("@thueVAT", SqlDbType.Int, 10, "ThueVAT"));
-                //da.InsertCommand = cmd;
-                //da.Update(dt);
-
-                //SqlCommand cmd1 = new SqlCommand(ins1, cn);
-                //cmd.Parameters.Add(new SqlParameter("@maHDB", SqlDbType.BigInt, 10, "MaHDB"));
-                //cmd.Parameters.Add(new SqlParameter("@maSach", SqlDbType.NVarChar, 10, "MaSach"));
-                //cmd.Parameters.Add(new SqlParameter("@donGia", SqlDbType.Real, 10, "DonGiaBan"));
-                //cmd.Parameters.Add(new SqlParameter("@soLuong", SqlDbType.Int, 10, "SoLuong"));
-
-                //da.InsertCommand = cmd1;
-                //da.Update(dt);
-                //MessageBox.Show("Them thanh cong");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void btThem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DataGridViewRow row = (DataGridViewRow)dgvMatHang.Rows[0].Clone();
-                row.Cells[0].Value = cbMaSach.SelectedValue;
-                row.Cells[1].Value = txtTenSach.Text;
-                row.Cells[2].Value = int.Parse(txtSoLuong.Text);
-                row.Cells[3].Value = float.Parse(txtDonBan.Text);
-                row.Cells[4].Value = int.Parse(txtThue.Text);
-                row.Cells[5].Value = double.Parse(txtThanhTien.Text);
-                dgvMatHang.Rows.Add(row);
-                //dr["MaSach"] = cbMaSach.SelectedText;
-                //dr["TenSach"] = txtTenSach.Text;
-                //dr["SoLuong"] = int.Parse(txtSoLuong.Text);
-                //dr["DonGiaBan"] = float.Parse(txtDonBan.Text);
-                //dr["ThueVAT"] = int.Parse(txtThue.Text);
-                //dr["ThanhTien"] = double.Parse(txtThanhTien.Text);
-                //dt.Rows.Add(dr);
-                //dgvMatHang.DataSource = dt;
-                MessageBox.Show("Them thanh cong");
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void btXoaHD_Click(object sender, EventArgs e)
-        {
-            Connect();
-            try
-            {
-                foreach (DataGridViewRow row in dgvMatHang.SelectedRows)
-                {
-                    dgvMatHang.Rows.Remove(row);
-                }
-                MessageBox.Show("Xoa thanh cong");
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
+            cbMaSach.Text = cbMaSach.DisplayMember;
         }
 
         private double TongTien()
         {
+            tongTien = 0;
             for (int i = 0; i < dgvMatHang.Rows.Count - 1; i++)
             {
                 tongTien += double.Parse(dgvMatHang.Rows[i].Cells["ThanhTien"].Value.ToString());
             }
             return tongTien;
+        }
+
+        private void btThemHD_Click(object sender, EventArgs e)
+        {
+            if (txtDonBan.Text != "" && txtSoLuong.Text != "" && txtThue.Text != "")
+            {
+                double a = double.Parse(txtDonBan.Text);
+                double b = double.Parse(txtSoLuong.Text);
+                double c = a * b;
+                txtThanhTien.Text = c.ToString();
+                dgvMatHang.Rows.Add(cbMaSach.Text, txtTenSach.Text, int.Parse(txtSoLuong.Text), float.Parse(txtDonBan.Text), int.Parse(txtThue.Text), double.Parse(txtThanhTien.Text));
+                txtTongTien.Text = TongTien().ToString(); 
+            }
+            else
+            {
+                if(txtDonBan.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập đơn giá");
+                }
+                else if (txtSoLuong.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập số lượng");
+                }
+                else if (txtThue.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập thuế");
+                }
+            }
+            btLuuHD.Enabled = true;
+            btXoaHD.Enabled = true;
+            btThemHD.Enabled = true;
+            txtMaHD.Enabled = true;
+            txtMaKH.Enabled = true;
+            txtMaNV.Enabled = true;
+            dtpNgayBan.Enabled = true;
+        }
+
+        private void btXoaHD_Click_1(object sender, EventArgs e)
+        {
+            Connect();
+            if (MessageBox.Show("Bạn có muốn xóa không", "Xóa", MessageBoxButtons.OKCancel, MessageBoxIcon.Error) == DialogResult.OK)
+            {
+                
+                try
+                {
+                    foreach (DataGridViewRow row in dgvMatHang.SelectedRows)
+                    {
+                        dgvMatHang.Rows.Remove(row);
+                    }
+                    MessageBox.Show("Xoa thanh cong");
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            btLuuHD.Enabled = true;
+            btXoaHD.Enabled = true;
+            btThemHD.Enabled = true;
+            txtMaHD.Enabled = true;
+            txtMaKH.Enabled = true;
+            txtMaNV.Enabled = true;
+            dtpNgayBan.Enabled = true;
+        }
+
+        private void btLuuHD_Click_1(object sender, EventArgs e)
+        {
+            Connect();
+            if (txtMaNV.Text != "" && txtMaKH.Text != "" && txtMaHD.Text != "")
+            {
+                try
+                {
+                    string ins = "INSERT INTO Hoa_Don_Ban VALUES('" + txtMaHD.Text + "','" + dtpNgayBan.Text + "','" + txtMaKH.Text + "','" + txtMaNV.Text + "','" + txtThue.Text + "')";
+                    SqlCommand cmd1 = new SqlCommand("INSERT INTO Hoa_Don_Ban(MaHDB,NgayBan,MaKH,MaNV,ThueVAT) VALUES(@MaHDB, @NgayBan,@MaKH,@MaNV,@Thue)", cn);
+                    cmd1.Parameters.AddWithValue("@MaHDB", txtMaHD.Text);
+                    cmd1.Parameters.AddWithValue("@NgayBan", dtpNgayBan.Text);
+                    cmd1.Parameters.AddWithValue("@MaKH", txtMaKH.Text);
+                    cmd1.Parameters.AddWithValue("@MaNV", txtMaNV.Text);
+                    cmd1.Parameters.AddWithValue("@Thue", txtThue.Text);
+                    cmd1.ExecuteNonQuery();
+                    cmd1.Parameters.Clear();
+
+                    SqlCommand cmd5 = new SqlCommand("INSERT INTO Chi_Tiet_HDB(MaHDB,MaSach,DonGiaBan,SoLuong) VALUES(@MaHDB,@MaSach,@DonGiaBan,@SoLuong)", cn);
+                    cmd5.Parameters.AddWithValue("@MaHDB", txtMaHD.Text);
+                    cmd5.Parameters.AddWithValue("@MaSach", cbMaSach.Text);
+                    cmd5.Parameters.AddWithValue("@DonGiaBan", txtDonBan.Text);
+                    cmd5.Parameters.AddWithValue("@SoLuong", txtSoLuong.Text);
+                    cmd5.ExecuteNonQuery();
+                    cmd5.Parameters.Clear();
+                    MessageBox.Show("Thêm thành công");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                if (txtMaHD.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập mã hóa đơn!");
+                }
+                else if (txtMaKH.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập mã khách hàng!");
+                }
+                else if (txtMaNV.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập mã nhân viên!");
+                }
+                //btLuuHD.Enabled = true;
+                //btXoaHD.Enabled = true;
+                //btThemHD.Enabled = true;
+                //txtMaHD.Enabled = false;
+                //txtMaKH.Enabled = false;
+                //txtMaNV.Enabled = false;
+                //dtpNgayBan.Enabled = false;
+            }
         }
     }
 }

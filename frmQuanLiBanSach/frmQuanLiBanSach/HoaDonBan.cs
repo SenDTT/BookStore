@@ -63,7 +63,7 @@ namespace frmQuanLiBanSach
             }
         }
 
-        private void LoadDataGirdView()
+        public void LoadDataGirdView()
         {
             string sql = "SELECT Hoa_Don_ban.* FROM Hoa_Don_ban";
             ds = GetDataSet(sql);
@@ -86,6 +86,7 @@ namespace frmQuanLiBanSach
         {
             ChiTietHoaDon cthd = new ChiTietHoaDon();
             cthd.ShowDialog();
+            LoadDataGirdView();
         }
 
         private void btXoa_Click(object sender, EventArgs e)
@@ -115,7 +116,6 @@ namespace frmQuanLiBanSach
                 }
                 catch (Exception)
                 {
-
                     MessageBox.Show("Xoa khong thanh cong");
                 }
             }
