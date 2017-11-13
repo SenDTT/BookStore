@@ -1,0 +1,26 @@
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\bin\Debug\Bookstore.exe
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\bin\Debug\Bookstore.pdb
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.csprojResolveAssemblyReference.cache
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.FrLogin.resources
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.Properties.Resources.resources
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.csproj.GenerateResource.Cache
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.csproj.CoreCompileInputs.cache
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.exe
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.pdb
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.FrKhoiDong.resources
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\bin\Debug\Bookstore.exe.config
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.frmQuanLySach.resources
+D:\Lap Trinh\Kiểm thử phần mềm\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.frmQLNV.resources
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.csprojResolveAssemblyReference.cache
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.FrmLogin.resources
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.Properties.Resources.resources
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.csproj.GenerateResource.Cache
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.csproj.CoreCompileInputs.cache
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.exe
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.pdb
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\bin\Debug\Bookstore.exe.config
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\bin\Debug\Bookstore.exe
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\bin\Debug\Bookstore.pdb
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.Quanlybansach.resources
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.Quanlycuahangsach.resources
+D:\Lap Trinh\kiem_thu_phan_mem\BookStore\Bookstore\Bookstore\obj\Debug\Bookstore.Quanlykhosach.resources

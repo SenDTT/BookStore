@@ -1,9 +1,0 @@
-D:\BOOK\KH\KH\bin\Release\KH.exe.config
-D:\BOOK\KH\KH\bin\Release\KH.exe
-D:\BOOK\KH\KH\bin\Release\KH.pdb
-D:\BOOK\KH\KH\obj\Release\KH.Form1.resources
-D:\BOOK\KH\KH\obj\Release\KH.Properties.Resources.resources
-D:\BOOK\KH\KH\obj\Release\KH.csproj.GenerateResource.Cache
-D:\BOOK\KH\KH\obj\Release\KH.exe
-D:\BOOK\KH\KH\obj\Release\KH.pdb
-D:\BOOK\KH\KH\obj\Release\KH.csprojResolveAssemblyReference.cache
